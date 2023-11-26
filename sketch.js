@@ -65,7 +65,6 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
-  addScreenPositionFunction();
   cam = createCamera();
   camZ = 200; // Set the pitch limit to 60 degrees
   cam.setPosition(camX, -200, camZ);
@@ -96,14 +95,6 @@ function setup() {
 
 function draw() {
   background(0);
-  push();
-  var p1 = screenPosition(0, 0, 0);
-  var p2 = screenPosition(100, 100, 0);
-  let dx = (camZ - p1.z) / 50;
-  translate(mouseX - width / 2 - p1.x * dx, mouseY - width / 2 - p1.y, p1.z);
-  sphere(50);
-  console.log(h);
-  pop();
   handleCameraMovement();
   drawGrid();
   drawAbstractForms();

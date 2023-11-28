@@ -569,10 +569,11 @@ function drawVerticalImages2(angle) {
   rotateY(angle);
 
   // Front plane with front texture
-  beginShape();
+  /*beginShape();
   texture(frontTexture);
   plane(frontTexture.width / 10, frontTexture.height / 10);
   endShape(CLOSE);
+  
 
   // Back plane with back texture
   translate(0, 0, -1); // Move the back plane slightly behind the front plane
@@ -580,7 +581,7 @@ function drawVerticalImages2(angle) {
   texture(backTexture);
   plane(frontTexture.width / 10, frontTexture.height / 10);
   endShape(CLOSE);
-
+*/
   pop();
 }
 

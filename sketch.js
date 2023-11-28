@@ -90,7 +90,7 @@ function setup() {
   );
   text3D5 = new ClickableText("The passive subject", 1000, -150, -400);
   text3D6 = new ClickableText("Describing identity", 1000, -150, -400);
-  text3D7 = new ClickableText("Have Fun!", 1000, -150, -400);
+  text3D7 = new ClickableText("Digital Mutilation", 1000, -150, -400);
 }
 
 function draw() {
